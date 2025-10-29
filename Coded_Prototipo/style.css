@@ -3,3 +3,34 @@
     margin: 0;
 }
 
+/* area main - home*/
+
+#main-home {
+    padding: 20px;
+    display: flex;
+}
+
+#coded-img-main {
+    width: 400px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+#presentation-coded {
+    width: 500px;
+}
+
+#presentation-coded p{
+    width: 300px;
+    margin: 0 auto;
+}
+
+#login-section {
+    justify-content: right;
+}
+
+#login-area {
+    border: 2px black solid;
+    width: 300px;
+    height: 100px;
+}
