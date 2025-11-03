@@ -3,12 +3,46 @@
     margin: 0;
 }
 
+/* header */
+
+#header-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-options-left {
+    display: flex;
+    
+}
+
+#header-options-left a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-option {
+    padding: 5px;
+    border-left: 2px solid black;
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#header-logo-right {
+    margin: 0px 30px;
+}
+
+#header-logo-right h3 {
+    margin-top: 10px;
+}
+
 /* area main - home*/
 
 #main-home {
-    padding: 20px;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
+    background-image: url(imgs/coded_logo.png);
 }
 
 #login-section {
