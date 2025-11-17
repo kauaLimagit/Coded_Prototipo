@@ -259,6 +259,20 @@
     padding: 10px 30px;
 }
 
+.aulaaovivo {
+    text-align: center;
+    padding: 0 300px;
+}
+
+.quadroaulaonline {
+    border: 1px solid black;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+
 .aulas-gravadas {
     margin: 20px 0;
     display: flex;
@@ -312,6 +326,7 @@
     border: 2px solid black;
     border-radius: 10px;
     padding: 15px;
+    background-color: aliceblue;
 }
 
 .conteudo-atividade .botao {
@@ -365,7 +380,7 @@ button:hover{
 }
 
 .feito {
-    color: lightgreen;
+    color: green;
 }
 
 /* material */
