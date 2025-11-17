@@ -30,6 +30,9 @@
             <h3><a href="login_aluno.html">Home</a></h3>
         </div>
         <div class="opcao">
+            <h3><a href="calendariomy.html">Calendario MY</a></h3>
+        </div>
+        <div class="opcao">
             <h3><a href="material.html">Material</a></h3>
         </div>
         <div class="opcao">
@@ -40,45 +43,36 @@
         </div>
     </section>
 
-    <section class="field">
-        <div class="field-title">
-            <h2>Calendario MY </h2>
+    <section class="field fielduser">
+        <div class="field-title titleperfil">
+            <h2>Perfil</h2>
         </div>
 
-        <center>
-            <div id="calendario">
-                <table id="table">
-                    <div class="cal"></div>
-                    
-                    <tr>
-                        <tH class="weekend">DOM</tH>
-                        <tH class="week">SEG</tH>
-                        <th class="week">TER</th>
-                        <th class="week">QUA</th>
-                        <th class="week">QUI</th>
-                        <th class="week">SEX</th>
-                        <th class="weekend">SAB</th>
-                    </tr>
-                </table>
+        <section id="perfilbox">
+            <div id="picture-logout">
+                <img src="imgs/profile-icon.webp" alt=""><br>
+                <button onclick="logout()">Logout</button>
             </div>
-        </center>
-
-        <div id="legenda">
-            <h4>Legenda</h4>
-
-            <div class="avisos">
-                <div class="bolinha">
-                    <div class="bola laranja"></div>
-                    <p>Atividades</p>
-                </div>
-
-                <div class="bolinha">
-                    <div class="bola verde"></div>
-                    <p>Provas</p>
-                </div>
+            <div class="dados">
+                <h3>Informações</h3>
+                <h4>Nome: nome-aluno</h4>
+                <h4>ID: aluno</h4>
+                <h4>Turma: A1</h4>
+                <h4>Idioma cursado: inglês</h4>
+                <h4>Periodo: Manhã</h4>
+                <h4>Telefone: (11) 97777-5555</h4>
+                <h4>E-mail: alunoinglês@gmail.com</h4>
+            </div>
+            <div class="dados">
+                <h3>Status</h3>
+                <h4>Situação: Cursando</h4>
+                <h4>Faltas: 7%</h4>
+                <h4>Atividades entregues: 22</h4>
+                <h4>Notas: 75%</h4>
 
             </div>
-        </div>
+        </section>
+
 
         <div class="finish-activity"></div>
 

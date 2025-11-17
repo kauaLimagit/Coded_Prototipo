@@ -10,6 +10,18 @@ function logar() {
     }
 }
 
+function perfil(){
+    window.location.href = "perfil.html"
+}
+
+function logout() {
+    let escolha = confirm("Deseja efetuar logout?")
+
+    if (escolha) {
+        window.location.href = "index.html"
+    }
+}
+
 function hamburguer() {
     if (ativar_display == 0) {
         janela.style.display = "inherit";
