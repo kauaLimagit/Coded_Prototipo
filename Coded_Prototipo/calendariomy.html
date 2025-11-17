@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/coded_logo.png" type="image/x-icon">
+    <title>Home aluno</title>
+</head>
+
+<body>
+    <header class="header-user">
+        <div class="header-item">
+            <h3>Nome-Escola</h3>
+        </div>
+        <div class="header-item area-aluno">
+            <h3>Area do Aluno</h3>
+        </div>
+        <div class="header-item">
+            <img src="imgs/profile-icon.png" alt="" width="30px">
+        </div>
+    </header>
+    <div class="hamburguericon" onclick="hamburguer()">
+        <img src="imgs/menu_hamburguer.png" alt="" width="30px" id="hamburguer">
+    </div>
+
+    <section id="janeladeopcoes">
+        <div class="opcao">
+            <h3><a href="login_aluno.html">Home</a></h3>
+        </div>
+        <div class="opcao">
+            <h3><a href="material.html">Material</a></h3>
+        </div>
+        <div class="opcao">
+            <h3><a href="atividades.html">Atividades</a></h3>
+        </div>
+        <div class="opcao">
+            <h3><a href="provas.html">Provas</a></h3>
+        </div>
+    </section>
+
+    <section class="field">
+        <div class="field-title">
+            <h2>Calendario MY </h2>
+        </div>
+
+        <center>
+            <div id="calendario">
+                <table id="table">
+                    <div class="cal"></div>
+                    
+                    <tr>
+                        <tH class="weekend">DOM</tH>
+                        <tH class="week">SEG</tH>
+                        <th class="week">TER</th>
+                        <th class="week">QUA</th>
+                        <th class="week">QUI</th>
+                        <th class="week">SEX</th>
+                        <th class="weekend">SAB</th>
+                    </tr>
+                </table>
+            </div>
+        </center>
+
+        <div id="legenda">
+            <h4>Legenda</h4>
+
+            <div class="avisos">
+                <div class="bolinha">
+                    <div class="bola laranja"></div>
+                    <p>Atividades</p>
+                </div>
+
+                <div class="bolinha">
+                    <div class="bola verde"></div>
+                    <p>Provas</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="finish-activity"></div>
+
+    </section>
+
+    <footer>
+        <p>© CODED - todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

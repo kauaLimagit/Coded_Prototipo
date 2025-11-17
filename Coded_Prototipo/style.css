@@ -41,10 +41,18 @@
 
 /* area main - home*/
 
+.divisao {
+    height: 30%px;
+    width: 3px;
+    background-color: black;
+    display: none;
+}
+
 #main-home {
-    padding: 20px 50px;
+    padding: 20px 100px;
     display: flex;
     justify-content: space-between;
+    background-image: linear-gradient(90deg,#45D49C, #0E2439);
 }
 
 #login-section {
@@ -54,6 +62,7 @@
 
 #presentation-coded {
     padding: 20px;
+    color: white;
 }
 
 
@@ -65,14 +74,16 @@
 
 
 #presentation-coded p{
-    width: 300px;
+    width: 400px;
     margin: 0 auto;
+    text-align: justify;
 }
 
 #login-area {
     border: 2px black solid;
     border-radius: 10px;
     width: 300px;
+    background-color: white;
 }
 
 #inputs {
@@ -102,11 +113,12 @@
     justify-content: space-between;
     display: flex;
     padding: 10px 30px;
-    background-color: lightgray;
+    color: white;
+    background-color: #0E2439;
 }
 
 .area-aluno {
-    border: 2px black solid;
+    border: 2px white solid;
     padding: 3px;
     border-radius: 3px;
 }
@@ -202,14 +214,21 @@
     margin-bottom: 20px;
 }
 
-.conteudo-atividade:hover {
-    cursor: pointer;
-}
-
 .conteudo-atividade {
     border: 2px solid black;
     border-radius: 10px;
     padding: 15px;
+}
+
+.conteudo-atividade .botao {
+   text-align: center;
+}
+
+.conteudo-atividade button {
+    padding: 10px;
+    background-color: #0E2439;
+    color: white;
+    border-radius: 10px;
 }
 
 .data-atividade {
@@ -227,4 +246,95 @@
     height: 4px;
     background-color: gray;
     border-radius: 10px;
+}
+
+/* footers */
+
+footer {
+    background-color: #0E2439;
+    color: white;
+    text-align: center;
+}
+
+/* provas*/
+
+.situacao {
+    text-align: center;
+}
+
+.afazer {
+    color: orange;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.feito {
+    color: lightgreen;
+}
+
+/* material */
+
+.conteudo-material p{
+    margin-bottom: 20px;
+}
+
+.material a {
+    color: black;
+    padding: 5px 10px; 
+    border-radius: 10px;
+}
+
+.material a:hover {
+    box-shadow: #0E2439 0px 0px 5px;
+}
+
+/* calendario my */
+
+#table {
+    border: 2px black solid;
+    padding: 5px;
+}
+
+th {
+    border: 1px black solid;
+}
+
+.column {
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+#legenda {
+    margin: 20px 0;
+}
+
+.bolinha {
+    display: flex;
+    margin: 20px 0;
+}
+
+.bola {
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.verde {
+    background-color: lightgreen;
+}
+
+.laranja {
+    background-color: orange;
+}
+
+.weekend {
+    background-color: lightgray;
+}
+
+.week {
+    background-color: lightblue;
 }
