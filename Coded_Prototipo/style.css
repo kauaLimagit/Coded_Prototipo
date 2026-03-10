@@ -259,9 +259,12 @@
     padding: 10px 30px;
 }
 
+.field-title {
+    text-decoration: underline;
+}
+
 .aulaaovivo {
     text-align: center;
-    padding: 0 300px;
 }
 
 .quadroaulaonline {
@@ -270,6 +273,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 40vw;
+    margin: 0 auto;
 }   
 
 
@@ -278,6 +283,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: #0e2439;
 }
 
 .aula:hover {
@@ -285,12 +291,18 @@
 }
 
 .aula {
-    border-top: 2px black solid;
-    border-bottom: 2px black solid;
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
     border-radius: 10px;
     width: min-content;
     padding: 10px;
     margin: 20px 0px;
+    color: white;
+}
+
+.aula h3 {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .video {
@@ -315,6 +327,8 @@
 
 #atividades {
     margin: 20px 0px;
+    background-color: #0E2439;
+    border-radius: 10px;
 }
 
 .atividade {
@@ -342,6 +356,11 @@
 
 .data-atividade {
     text-align: center;
+    color: white;
+}
+
+.data-atv {
+    color: black;
 }
 
 .prazo-atividade {
@@ -404,10 +423,16 @@ button:hover{
 #table {
     border: 2px black solid;
     padding: 5px;
+    background-color: #0E2439;
 }
 
 th {
     border: 1px black solid;
+}
+
+td {
+    background-color: white;
+    border-radius: 5px;
 }
 
 .column {
@@ -466,7 +491,7 @@ th {
 }
 
 #perfilbox {
-    background-image: linear-gradient(90deg,#45D49C, #0E2439);
+    background-image: linear-gradient(90deg,#018552, #0E2439);
     display: flex;
     border: 1px solid black;
     justify-content: space-between;
