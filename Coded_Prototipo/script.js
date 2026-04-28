@@ -1,5 +1,7 @@
-const janela = document.querySelector("#janeladeopcoes")
+const navbar = document.querySelector("#navbarlateral")
+const avisar = document.querySelector("#aviso")
 let ativar_display = 0
+let aviso = 0
 
 function logar() {
     let identificacao = document.querySelector("#identificacao").value
@@ -7,8 +9,20 @@ function logar() {
 
     if (identificacao == "aluno" && senha == "1234") {
         window.location.href = "login_aluno.html";
+    }else if((identificacao != "aluno" || senha != "1234") && aviso == 0){
+        let mkaviso = document.createElement('p')
+        mkaviso.textContent = 'Usuário ou Senha incorretos!'
+
+        avisar.appendChild(mkaviso)
+        aviso += 1
     }
 }
+
+document.addEventListener('keydown', function(k){
+    if(k.key == "Enter") {
+        logar()
+    }
+})
 
 function perfil(){
     window.location.href = "perfil.html"
@@ -24,10 +38,12 @@ function logout() {
 
 function hamburguer() {
     if (ativar_display == 0) {
-        janela.style.display = "inherit";
+        navbar.style.width = '250px'
+        navbar.className = 'ativado'
         ativar_display = 1
     } else {
-        janela.style.display = "none";
+        navbar.style.width = '38px'
+        navbar.className = 'none'
         ativar_display = 0
     }
 }

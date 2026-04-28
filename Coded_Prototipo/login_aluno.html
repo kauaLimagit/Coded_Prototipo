@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="shortcut icon" href="imgs/coded_logo.png" type="image/x-icon">
     <title>Home aluno</title>
 </head>
+
 <body>
     <header class="header-user">
         <div class="header-item">
@@ -19,24 +21,65 @@
             <img class="profile-button" src="imgs/profile-icon.png" onclick="perfil()" alt="" width="30px">
         </div>
     </header>
-    <div class="hamburguericon" onclick="hamburguer()">
-        <img src="imgs/menu_hamburguer.png" alt="" width="30px" id="hamburguer"> 
-    </div>
 
-    <section id="janeladeopcoes">
-            <div class="opcao">
-                <h3><a href="calendariomy.html">Calendario MY</a></h3>
-            </div>
-            <div class="opcao">
-                <h3><a href="material.html">Material</a></h3>
-            </div>
-            <div class="opcao">
-                <h3><a href="atividades.html">Atividades</a></h3>
-            </div>
-            <div class="opcao">
-                <h3><a href="provas.html">Provas</a></h3>
-            </div>
-        </section>
+    <div id="navbarlateral" class="none">
+
+        <div class="secao-aba">
+            <img src="imgs/menu_hamburguer.png" alt="" id="hamburguer" onclick="hamburguer()">
+        </div>
+
+        <div class="secao-aba">
+
+            <img src="./imgs/home.png" alt="" id="home">
+
+            <a href="./login_aluno.html">
+                <h3>Home</h3>
+            </a>
+
+        </div>
+
+        <div class="secao-aba">
+
+            <img src="./imgs/book.png" alt="" id="atividade">
+
+            <a href="./atividades.html">
+                <h3>Atividades</h3>
+            </a>
+
+        </div>
+
+        <div class="secao-aba">
+
+            <img src="./imgs/openbook.png" alt="" id="material">
+
+            <a href="./material.html">
+                <h3>Material</h3>
+            </a>
+
+        </div>
+
+        <div class="secao-aba">
+
+            <img src="./imgs/task.png" alt="" id="provas">
+
+            <a href="./provas.html">
+                <h3>Provas</h3>
+            </a>
+
+        </div>
+
+        <div class="secao-aba">
+
+            <img src="./imgs/calendar.png" alt="" id="calendario">
+
+            <a href="./calendariomy.html">
+                <h3>CalendarioMy</h3>
+            </a>
+
+        </div>
+
+
+    </div>
 
     <section class="field">
         <div class="field-title">
@@ -60,7 +103,9 @@
                 <div class="complement">
                     <h4>Descrição:</h4>
                     <p>aula com foco na explicação do verbo to be</p>
-                    <div class="data-video"><p>xx/xx/xxxx</p></div>
+                    <div class="data-video">
+                        <p>xx/xx/xxxx</p>
+                    </div>
                 </div>
             </div>
             <div class="aula">
@@ -69,7 +114,9 @@
                 <div class="complement">
                     <h4>Descrição:</h4>
                     <p>aula com foco na explicação sobre a utilização do gerundio.</p>
-                    <div class="data-video"><p>xx/xx/xxxx</p></div>
+                    <div class="data-video">
+                        <p>xx/xx/xxxx</p>
+                    </div>
                 </div>
             </div>
             <div class="aula">
@@ -78,16 +125,21 @@
                 <div class="complement">
                     <h4>Descrição:</h4>
                     <p>aula com foco na explicação do verbo to be</p>
-                    <div class="data-video"><p>xx/xx/xxxx</p></div>
+                    <div class="data-video">
+                        <p>xx/xx/xxxx</p>
+                    </div>
                 </div>
             </div>
 
             <div class="finish-activity"></div>
-            
+
     </section>
 
-    <footer><p>© CODED - todos os direitos reservados</p></footer>
+    <footer>
+        <p>© CODED - todos os direitos reservados</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
