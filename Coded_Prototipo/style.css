@@ -87,6 +87,12 @@
     margin-top: 50px;
 }
 
+#dark-mode:hover {
+    background-color: black;
+    color: white;
+    
+}
+
 #inputs {
     padding: 20px;
     justify-content: center;
