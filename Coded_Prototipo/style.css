@@ -87,9 +87,14 @@
     margin-top: 50px;
 }
 
-#dark-mode:hover {
+:root {
+    background-color: white;
+    body-color: lightgreen;
+}
+
+.dark-mode:root {
     background-color: black;
-    color: white;
+    body-color: white;
     
 }
 
