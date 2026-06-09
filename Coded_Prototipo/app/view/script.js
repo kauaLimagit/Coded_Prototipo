@@ -43,11 +43,13 @@ if (senha && labelSenha) {
     senha.addEventListener("keyup", ()=>{
         if (senha.value.length <= 5) {
             labelSenha.setAttribute("style", "color: red")
-            labelSenha.innerHTML = "SENHA INVÁLIDA *Insira no mínimo 6 caracteres*"
+            labelSenha.innerHTML = "Insira no mínimo 6 caracteres*"
+            labelSenha.style.left = '-5px'
             validSenha = false
         } else {
             labelSenha.setAttribute("style", "color: green")
             labelSenha.innerHTML = "Senha"
+            document.labelSenha.style.left = '0'
             validSenha = true
         }
     })
@@ -65,6 +67,18 @@ if (confirmSenha) {
             validConfirmSenha = true
         }
     })
+}
+
+let senhareveal = 0;
+
+function revelarsenha(){
+    if(senhareveal == 0) {
+        senha.type = 'text';
+        senhareveal += 1;
+    }else {
+        senha.type = 'password';
+        senhareveal -= 1;
+    }
 }
 
 function cadastrar() {
@@ -181,7 +195,7 @@ function logout() {
     let escolha = confirm("Deseja efetuar logout?")
 
     if (escolha) {
-        window.location.href = "index.html"
+        window.location.href = "index.php"
     }
 }
 
@@ -229,12 +243,62 @@ if (table) {
 }
 
 //Modo escuro
-const modoescuro = document.getElementById("modoescuro")
-const body = document.querySelector("body")
+// const modoescuro = document.getElementById("modoescuro")
+// const body = document.querySelector("body")
 
-if (modoescuro) {
-    modoescuro.addEventListener("click", ()=>{
-        modoescuro.classList.toggle("dark")
-        body.classList.toggle("dark")
-    })
+// if (modoescuro) {
+//     modoescuro.addEventListener("click", ()=>{
+//         modoescuro.classList.toggle("dark")
+//         body.classList.toggle("dark")
+//     })
+// }
+
+let darkmode = 0;
+
+const indicador = document.querySelector('.indicador');
+const modo_icone = document.querySelector('#modo-icone');
+const modo_escuro_texto = document.querySelector('#modo-escuro-texto');
+
+addEventListener('DOMContentLoaded', function() {
+    
+    if(localStorage.getItem('fundo') == 1){
+        darkmode = 1;
+        console.log(darkmode)
+    }
+
+    if(localStorage.getItem('fundo') == 1){
+        document.body.style.backgroundColor = '#051138';
+        indicador.id = 'indicador-ativado';
+        modo_icone.src = 'imgs/lua.png';
+        modo_escuro_texto.className = 'texto_claro';
+        
+    }else {
+        document.body.style.backgroundColor = 'inherit';
+        indicador.id = '';
+        modo_icone.src = 'imgs/sol.png';
+        modo_escuro_texto.className = ''
+    }
+})
+
+function modoescuro(){
+    
+    if(darkmode == 0){
+        document.body.style.backgroundColor = '#051138';
+        indicador.id = 'indicador-ativado';
+        modo_icone.src = 'imgs/lua.png';
+        modo_escuro_texto.className = 'texto_claro';
+        darkmode += 1
+        localStorage.setItem('fundo', darkmode)
+        console.log(localStorage.getItem('fundo'))
+        
+    }else {
+        document.body.style.backgroundColor = 'inherit';
+        indicador.id = '';
+        modo_icone.src = 'imgs/sol.png';
+        modo_escuro_texto.className = ''
+        darkmode -= 1;
+        localStorage.setItem('fundo', darkmode)
+        console.log(localStorage.getItem('fundo'))
+    }
+    
 }

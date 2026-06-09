@@ -793,3 +793,52 @@ a:hover{
     border-radius: 4px;
     display: none;
 }
+
+#tabela-usuarios {
+    margin-top: 20px;
+}
+
+#adduser {
+    text-align: right;
+    width: 90%;
+    transition: 1s;
+}
+
+@keyframes adduser {
+    25%{transform: rotate(25deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(-25deg);}
+    100%{transform: rotate(0deg);}
+}
+
+#adduser img:hover {
+    cursor: pointer;
+    transition: 1s;
+    animation: adduser infinite linear 1s;
+}
+
+#tabela-usuarios table {
+    background-color:#1c4c79;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+#tabela-usuarios td {
+    border-radius: 0;
+    background-color: whitesmoke;
+    font-weight: bold;
+}
+
+#tabela-usuarios th {
+    color: white;
+    padding: 10px;
+}
+
+.icone_acao {
+    margin: 0 auto;
+    width: min-content;
+    border-radius: 10px;
+    padding: 2px;
+    transition: 0.3s;
+}
