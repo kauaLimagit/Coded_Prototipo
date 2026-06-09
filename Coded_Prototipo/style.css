@@ -14,8 +14,7 @@
 }
 
 #header-options-left {
-    display: flex;
-    
+    display: flex;  
 }
 
 #header-options-left a {
@@ -31,8 +30,25 @@
     margin-top: 10px;
 }
 
+.header-adm {
+    background-image: linear-gradient(90deg,#45D49C, #1c4c79);
+}
+
+#nome-escola {
+    border-left: none;
+}
+
+#nome-escola h3{
+    width: 200px;
+}
+
+#administrador {
+    border-left: none;
+}
+
 #header-logo-right {
     margin: 0px 30px;
+    display: flex;
 }
 
 #header-logo-right h3 {
@@ -116,12 +132,12 @@
 
 #logaruser {
     color: white;
-    background-color: lightgreen;
+    background-color: rgb(3, 172, 3);
     border-radius: 10px;
 }
 
 #logaruser:hover {
-    background-color: green;
+    background-color: rgb(0, 90, 0);
 }
 
 #servicos {
@@ -280,6 +296,7 @@
 
 .field-title {
     text-decoration: underline;
+    margin: 35px 0;
 }
 
 .aulaaovivo {
@@ -298,11 +315,13 @@
 
 
 .aulas-gravadas {
-    margin: 20px 0;
+    margin: 50px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #0e2439;
+    background-color: #0E2439;
+    padding: 20px;
+    border-radius: 30px;
 }
 
 .aula:hover {
@@ -315,7 +334,7 @@
     border-radius: 10px;
     width: min-content;
     padding: 10px;
-    margin: 20px 0px;
+    margin: 20px 50px;
     color: white;
 }
 
@@ -329,6 +348,7 @@
     width: 250px;
     text-align: center;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .video img {
@@ -346,7 +366,6 @@
 
 #atividades {
     margin: 20px 0px;
-    background-color: #0E2439;
     border-radius: 10px;
 }
 
@@ -398,8 +417,8 @@
 /* footers */
 
 footer {
-    background-color: #0E2439;
-    color: white;
+    /* background-color: #0E2439; */
+    color: black;
     text-align: center;
 }
 
@@ -443,6 +462,8 @@ button:hover{
     border: 2px black solid;
     padding: 5px;
     background-color: #0E2439;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 th {
@@ -563,9 +584,8 @@ td {
     background-color: rgb(172, 171, 171);
     border-radius: 150px;
     margin-top: 10px;
-    margin-left: 300px;
-    position: relative;
     cursor: pointer;
+    margin-right: 20px;
 }
 
 .modoescuro .indicador {
@@ -573,9 +593,8 @@ td {
     height: 25px;
     background-color: rgb(0, 0, 0);
     border-radius: 50%;
-    transition: scale(.9);
-    position: absolute;
     left: 0;
+    transition: .5s;
 }
 
 .modoescuro.dark{
@@ -587,10 +606,9 @@ td {
     background-color: white;
 }
 
-/* .presentation-coded.dark {
-    background-color: #c3c5c5;
-    color: white;
-} */
+#indicador-ativado {
+    transform: translateX(25px);
+}
 
 .body{
     height: 100vh;
@@ -599,7 +617,25 @@ td {
     align-items: center;
     flex-direction: column;
     background-color: #212121;
+    transition: .5s;
 }
+
+.texto_claro h1,
+.texto_claro h2, 
+.texto_claro h3,
+.texto_claro p,
+.texto_claroa, 
+.texto_claro #header-options-left a {
+    color: white;
+}
+
+.texto_claro #login-area {
+    background-color: #051138;
+}
+
+.texto_claro #logaruser {
+    border: 2px black solid;
+} 
 
 .body.dark {
     background-color: #e4e4e4;
@@ -621,10 +657,11 @@ td {
 }
 
 .card{
+    width: 250px;
     background-color: lightgreen;
     padding: 30px;
     border-radius: 4%;
-    box-shadow: 3px 3px 1px 0px  #00000060
+    box-shadow: 3px 3px 1px 0px  #00000060;
 }
 
 h1{
@@ -663,14 +700,13 @@ h1{
     pointer-events: none;
     position:absolute;
     top: 0;
-
     left: 0;
     margin-top: 13px
 }
 
 .label-float input:focus + label,
 .label-float input:valid + label{
-    font-size: 13px;
+    font-size: 15   px;
     margin-top: 0;
     color:#212121
 }
@@ -682,8 +718,8 @@ h1{
     position: absolute;
     bottom: -23px;
     left: 0;
-    font-size: 11px;
-    color: red;
+    font-size: 16px;
+    color: black;
     white-space: nowrap;
 }
 
@@ -718,7 +754,7 @@ hr{
 }
 
 p{
-    color: #0E2439;
+    
     font-size: 14px;
     text-align: center;
 }
