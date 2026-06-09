@@ -842,3 +842,61 @@ a:hover{
     padding: 2px;
     transition: 0.3s;
 }
+.icone_acao:hover {
+    cursor: pointer;
+    transform: rotate(10deg);
+    transition: 0.3s;
+}
+.icone_acao button {
+    display: contents;
+}
+
+.icone_acao img{
+    width: 40px;
+}
+
+.icone_del {
+    background-color: darkred;
+}
+
+.icone_alt {
+    background-color: darkblue;
+}
+
+@keyframes message { 
+    0%{color: lightyellow; width: 10px;}
+    50%{color: black; width: 300px;}
+    100%{color: lightyellow; width: 10px;}
+}
+
+.texto_claro #tabela-usuarios table td {
+    background-color: #121212;
+    color: white;
+    border-color: #87d1ff;
+}
+.texto_claro #tabela-usuarios table th {
+    border-color: #87d1ff;
+}
+
+.texto_claro #tabela-usuarios table .icone_alt {
+    background-color: #009a1c;
+}
+
+.texto_claro #mensagem-alerta p{
+    color: black;
+}
+
+#container-logout {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#logout {
+    background-color: rgb(187, 0, 0);
+    color: white;
+}
+
+#logout:hover {
+    cursor: pointer;
+    background-color: rgb(89, 0, 0);
+}
